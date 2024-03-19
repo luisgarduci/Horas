@@ -17,11 +17,13 @@ let options = {
 
 
 async function FetchApi(query) {
-  let url = `https://api.pexels.com/v1/search?query=${query}&limit=50`;
+  let url = `https://api.pexels.com/v1/search?query=${query}`;
   const ApiResponse = await fetch(url, options);
   const data = await ApiResponse.json();
   return data;
   }
+
+  console.log(FetchApi('soccer'));
 
   async function FetchImage(query) {
     let random = Math.floor(Math.random() * 15);
