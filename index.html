@@ -7,63 +7,50 @@
     <title>Document</title>
     <style>
     body {
-       background-color: blue;
+       height: 100vh;
     }
-
-    header {
-        text-align: center;
-        color: white;
-    }
-
-   main > div > img {
-     width: 400px;
-     height: 300px;
-     margin-top: 15px;
-   }
 
     main {
-       width: 600px;
-       height: 450px;
+       width: 400px;
+       height: 250px;
        padding: 9px;
        border-radius: 5px;
        margin: auto;
        display: block;
-       background-color: white;
+       margin-top: 130px;
+       background-color: rgba(245, 245, 220, 0.836);
+    }
+
+    main > h1 {
+        text-align: center;
     }
 
     main > div {
         text-align: center;
     }
-
-    footer {
+    
+    main > p {
         text-align: center;
-        color: white;
     }
 
     @media (max-width: 670px) {
         main {
-            width: 90%;
+            width: 80%;
         }
 
-        main > div > img {
-            width: 90%;
-        }
     }
 </style>
 </head>
 <body id="corpo">
-    <header>
+    
+    <main id="conteudo">
         <h1 id="title"></h1>
-    </header>
-    <main>
         <div id="msg"></div>
         <div>
             <img src="" alt="" id="foto">
         </div>
-    </main>
-    <footer>
         <p>&copy; Luís Fernando</p>
-    </footer>
+    </main>
     
     <script src="script.js"></script>
 </body>
