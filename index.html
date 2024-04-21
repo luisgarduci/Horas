@@ -9,6 +9,10 @@
     body {
        height: 100vh;
     }
+    
+    body::-webkit-scrollbar {
+        width: 0;
+    }
 
     main {
        width: 400px;
@@ -31,6 +35,22 @@
     
     main > p {
         text-align: center;
+    }
+
+    @media (min-width: 1600px){
+        main {
+         width: 450px;
+         height: 300px;
+         margin-top: 190px;
+        }
+
+        main > h1 {
+            font-size: 34px;
+        }
+
+        main > p {
+            font-size: 18px;
+        }
     }
 
     @media (max-width: 670px) {
